@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DT</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/pone.css">
+  </head>
+  <body>
+    <header>
+      <a href="#"><h1>DT</h1></a>
+    </header>
+    <div id="main">
+      <img src="./img/메인.png" alt="메인 이미지" width="100%" height="325px">
+    </div>
+    <div id="rooms">
+      <h2>TEAM.DT</h2>
+      <br/>
+      <p id="rmp">웹 사이트, html,css,js를 사용하여 프론트 엔드를 학습합니다.</p>
+      <button type="button" class="mr" onclick="popup('./room.html','룸 플러스','width=1000,height=1000')">more..</button>
+      <div id="rm">
+        <span class="rooms"><img src="./img/룸1.png" alt="" width="290px" height="250px"></span>
+        <br/><p>HTML<br/><br/><span class="cp">마크업 언어</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+        <span class="rooms"><img src="./img/룸2.png" alt="" width="290px" height="250px"></span>
+        <br/><p>CSS<br/><br/><span class="cp">스타일 시트</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+        <span class="rooms"><img src="./img/룸3.jpg" alt="" width="290px" height="250px"></span>
+        <br/><p>JS<br/><br/><span class="cp">자바스크립트</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+        <span class="rooms"><img src="./img/룸4.png" alt="" width="290px" height="250px"></span>
+        <br/><p>JQUERY<br/><br/><span class="cp">자바스크립트 라이브러리</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+      </div>
+      <div id="img">
+        <span class="img"><img src="./img/포트폴리오1-1.jpg" alt="" width="100%" height="200px"></span>
+        <span class="img" style="margin-top:20px;" onclick="location.href='https://kepo-kr.github.io/DT-me/%EC%9B%94%ED%81%B4%ED%8E%9C/'"><img src="./img/포트폴리오1-2.jpg" alt="" width="100%" height="200px"></span>
+      </div>
+      <div id="review">
+        <span class="rooms"><img src="./img/리뷰.png" alt="" width="290px" height="250px"></span>
+        <span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>제목</strong>만든이<br/>설명
+          <br/>설명
+        </span>
+        <span class="rooms"><img src="./img/리뷰.png" alt="" width="290px" height="250px"></span>
+        <span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>제목</strong>만든이<br/>설명
+          <br/>설명
+        </span>
+        <span class="rooms"><img src="./img/리뷰.png" alt="" width="290px" height="250px"></span>
+        <span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>제목</strong>만든이<br/>설명
+          <br/>설명
+        </span>
+        <span class="rooms"><img src="./img/리뷰.png" alt="" width="290px" height="250px"></span>
+        <span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>제목</strong>만든이<br/>설명
+          <br/>설명
+        </span>
+        <button type="button" class="mr" onclick="popup('./re.html','리뷰 플러스','width=1000,height=1000')">리뷰 더보기</button>
+      </div>
+    </div>
+    <div id="footer">
+      <footer>
+        <table>
+          <tbody>
+            <tr>
+              <td>상호:월드 클래스 펜션</td>
+              <td>대표자:황상호</td>
+              <td>이메일:sangho5987@gmail.com</td>
+            </tr>
+            <tr>
+              <td>예약전화:<a href="tel:01034245987">010-3424-5987</a></td>
+              <td>사업자 등록 번호:1111111111</td>
+              <td>이용약관</td>
+            </tr>
+            <tr>
+              <td>주소:인천 광역시 서구</td>
+              <td>통신판매번호:제2021-인천-0001호</td>
+              <td>개인정보처리방침</td>
+            </tr>
+          </tbody>
+        </table>
+      </footer>
+    <script>
+    function popup(url,tit,opsi) {
+      alert('지원되지 않는 서비스입니다');
+      //window.open(url,tit,opsi);
+    }
+    </script>
+  </body>
+</html>
