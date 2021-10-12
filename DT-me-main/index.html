@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      p {
+        font-size: 1rem;
+        color: white;
+        position: absolute;
+        left: 30px;
+      }
+      span {
+        width: 3rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        background: black;
+        padding: 2rem;
+        margin: 0;
+        float: left;
+        transition: all 0.2s ease;
+      }
+      span:hover {
+        background: tomato;
+        transform: scale(1);
+      }
+    .zz {
+      background: tomato;
+      transform: scale(1);
+      }
+      .wrap {
+        position: relative;
+        width: 21rem;
+        height: 28rem;
+        float: left;
+      }
+      #text {
+        height: 4rem;
+        width: 21rem;
+        pointer-events: none;
+        box-sizing: border-box;
+      }
+      body {
+        background: skyblue;
+      }
+      #zz {
+        width: 43rem;
+        margin: 70px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="zz">
+      <div class="wrap">
+        <input type="text" id="text">
+        <span id="1" onclick="but(1)">1</span>
+        <span id="2" onclick="but(2)">2</span>
+        <span id="3" onclick="but(3)">3</span>
+        <br>
+        <span id="4" onclick="but(4)">4</span>
+        <span id="5" onclick="but(5)">5</span>
+        <span id="6" onclick="but(6)">6</span>
+        <br>
+        <span id="7" onclick="but(7)">7</span>
+        <span id="8" onclick="but(8)">8</span>
+        <span id="9" onclick="but(9)">9</span>
+        <br>
+        <span id="0" onclick="but(0)">0</span>
+        <span id="d" onclick="but('Backspace')" style="font-size:1.5rem;">삭제</span>
+        <span id="q" onclick="but('Enter')" style="font-size:1.5rem;">완료</span>
+      </div>
+      <div class="wrap" style="margin-left:1rem;background:#343a40;">
+        <h1 style="
+        color: white;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        ">제어판 설명문</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>삭제:지우기(q)</p>
+        <br>
+        <p>완료:검사하기(d)</p>
+        <br>
+        <p>클릭하거나 키보드를 사용하세요.</p>
+        <br>
+        <p>password를 입력하시기 바랍니다.</p>
+        <br>
+        <p>암호:1011101100011-2</p>
+      </div>
+    </div>
+    <script>
+    let pw = []
+    let text = document.getElementById('text');
+    function but(n) {
+      if (n == "Enter") {
+        d = ["5,9,8,7"];
+        console.log(pw.length);
+        console.log(d,pw)
+        if (text.value == d) {
+          alert("비밀번호 일치");
+          location.reload();
+        } else {
+          alert("비밀번호 불일치");
+          location.reload();
+        }
+      } else if (n == "Backspace"){
+        console.log("A");
+        pw.pop();
+      } else {
+        pw.push(n);
+        console.log(pw);
+      }
+      text.value = pw;
+      }
+    window.addEventListener("keydown", (e) => {
+      const key = document.getElementById(e.key);
+      if (key){
+        key.classList.add("zz");
+        if (e.key == "q") {
+          d = ["5,9,8,7"];
+          console.log(pw.length);
+          console.log(d,pw)
+          if (text.value == d) {
+            alert("비밀번호 일치");
+            location.reload();
+          } else {
+            alert("비밀번호 불일치");
+            location.reload();
+          }
+        } else if (e.key == "d"){
+          console.log("A");
+          pw.pop();
+        } else {
+          pw.push(e.key);
+          console.log(pw);
+        }
+        text.value = pw;
+        }
+    });
+
+    window.addEventListener("keyup", (e) => {
+      const key = document.getElementById(e.key);
+      if (key) key.classList.remove("zz");
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>월드 클래스 펜션</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+    function im() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+  if (im()) location='./pone.html';
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="#"><h1>월드 클래스 펜션</h1></a>
+      <a href="#nvm" class="a">예약안내</a>
+      <a href="#review" class="a">펜션소개</a>
+      <a href="#rooms" class="a">객실안내</a>
+    </header>
+    <div id="main">
+      <img src="./img/메인.jpg" alt="메인 이미지" width="1200px" height="625px">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio">
+      <input type="radio">
+    </div>
+    <div id="rooms">
+      <h2>ROOMS</h2>
+      <br/>
+      <p id="rmp">아기자기한 인테리어,따듯하고 멋진 뷰,당신을 위해 준비하겠습니다.</p>
+      <button type="button" id="mr" onclick="popup('./room.html','룸 플러스','width=1000,height=1000')">more..</button>
+      <div id="rm">
+        <span class="rooms"><img src="./img/룸1.jpg" alt="" width="290px" height="250px"></span>
+        <span class="rooms"><img src="./img/룸2.jpg" alt="" width="290px" height="250px"></span>
+        <span class="rooms"><img src="./img/룸3.jpg" alt="" width="290px" height="250px"></span>
+        <span class="rooms"><img src="./img/룸4.jpg" alt="" width="290px" height="250px"></span>
+        <br/><p>A ROOM<br/><br/><span class="cp">커플 전용</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+        <br/><p>B ROOM<br/><br/><span class="cp">커플 전용</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+        <br/><p>C ROOM<br/><br/><span class="cp">커플 전용</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+        <br/><p>D ROOM<br/><br/><span class="cp">커플 전용</span><br/><br><span class="ca" onclick="alert('지원되지 않는 서비스 입니다!');">자세히 보기></span></p>
+      </div>
+      <div id="img">
+        <span class="img"><img src="./img/사진1.jpg" alt="" width="1200px" height="700px"></span>
+        <span class="img" style="margin-top:20px;"><img src="./img/사진2.jpg" alt="" width="1200px" height="700px"></span>
+      </div>
+      <div id="review">
+        <span class="rooms"><img src="./img/리뷰1.jpg" alt="" width="290px" height="250px"></span>
+        <span class="rooms"><img src="./img/리뷰2.jpg" alt="" width="290px" height="250px"></span>
+        <span class="rooms"><img src="./img/리뷰3.jpg" alt="" width="290px" height="250px"></span>
+        <span class="rooms"><img src="./img/리뷰4.jpg" alt="" width="290px" height="250px"></span>
+        <span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>이렇게 좋은 펜션은 처음 봤어요.</strong>주변에 강이 많아 물놀이도 하고<br/>아이들도 많이 즐거워 해요 잘 즐기다
+          <br/>갑니다.
+        </span>
+        <span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>이렇게 좋은 펜션은 처음 봤어요.</strong>주변에 강이 많아 물놀이도 하고<br/>아이들도 많이 즐거워 해요 잘 즐기다
+          <br/>갑니다.
+        </span><span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>이렇게 좋은 펜션은 처음 봤어요.</strong>주변에 강이 많아 물놀이도 하고<br/>아이들도 많이 즐거워 해요 잘 즐기다
+          <br/>갑니다.
+        </span><span class="remsg">
+          <strong style="font-weight: normal;">✰✰✰✰✰</strong>
+          <strong>이렇게 좋은 펜션은 처음 봤어요.</strong>주변에 강이 많아 물놀이도 하고<br/>아이들도 많이 즐거워 해요 잘 즐기다
+          <br/>갑니다.
+          <br>
+        </span>
+        <button type="button" onclick="popup('./re.html','리뷰 플러스','width=1000,height=1000')">리뷰 더보기</button>
+      </div>
+    </div>
+    <div id="nv">
+      <div id="nvm">
+        <iframe src="https://m.map.naver.com/" width="100%" height="100%"></iframe>
+      </div>
+      <div class="nv">
+      </div>
+      <div class="nv" style="margin-top:306.5px;">
+      </div>
+    </div>
+    <div id="footer">
+      <footer>
+        <h2 id="fth2">월드 클래스 펜션</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>상호:월드 클래스 펜션</td>
+              <td>대표자:황상호</td>
+              <td>이메일:sangho5987@gmail.com</td>
+            </tr>
+            <tr>
+              <td>예약전화:<a href="tel:01034245987">010-3424-5987</a></td>
+              <td>사업자 등록 번호:1111111111</td>
+              <td>이용약관</td>
+            </tr>
+            <tr>
+              <td>주소:인천 광역시 서구</td>
+              <td>통신판매번호:제2021-인천-0001호</td>
+              <td>개인정보처리방침</td>
+            </tr>
+          </tbody>
+        </table>
+      </footer>
+    </div>
+    <script>
+    function popup(url,tit,opsi) {
+      alert('지원되지 않는 서비스입니다');
+      //window.open(url,tit,opsi);
+    }
+    </script>
+  </body>
+</html>
